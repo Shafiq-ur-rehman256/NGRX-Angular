@@ -19,7 +19,6 @@ export class AppComponent {
 
   constructor(private store: Store<{ counter: any }>){
     this.count$ = store.select('counter');
-    console.log(this.count$);
   }
 
 
