@@ -1,2 +1,10 @@
-
-<div>Hello world</div>
+<div class="container-xxl d-flex mt-5">
+  <div class="container-md">
+    <button type="button" class="btn btn-secondary">Current Count: {{ count$ | async }}</button>
+  </div>
+  <div class="container-md d-flex justify-content-around">
+    <button class="btn btn-success" (click)="increment()">Increment</button>
+    <button class="btn btn-danger" (click)="decrement()">Decrement</button>
+    <button class="btn btn-warning" (click)="reset()">Reset</button>
+  </div>
+</div>
